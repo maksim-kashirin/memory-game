@@ -1,0 +1,16 @@
+{
+  "name": "memory-game-mia-vasilisa",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Локальная браузерная игра «Мемори» для Мии и Василисы",
+  "scripts": {
+    "dev": "node scripts/serve.mjs . 5173",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist 4173",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff7e8" />
+    <meta name="description" content="Детская игра на память для Мии и Василисы" />
+    <title>Мемори — собери пары</title>
+    <link rel="stylesheet" href="./src/styles/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#app">К основному содержимому</a>
+    <div class="background-shape background-shape--one" aria-hidden="true"></div>
+    <div class="background-shape background-shape--two" aria-hidden="true"></div>
+
+    <div class="utility-controls" aria-label="Настройки игры">
+      <button id="sound-button" class="icon-button" type="button" aria-pressed="true">
+        <span class="icon-button__icon" aria-hidden="true">🔊</span>
+        <span class="icon-button__label">Звук включён</span>
+      </button>
+      <button id="fullscreen-button" class="icon-button" type="button">
+        <span class="icon-button__icon" aria-hidden="true">⛶</span>
+        <span class="icon-button__label">На весь экран</span>
+      </button>
+    </div>
+
+    <main id="app" tabindex="-1"></main>
+    <div id="announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+    <div id="celebration-layer" class="celebration-layer" aria-hidden="true"></div>
+
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>
